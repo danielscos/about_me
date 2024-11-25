@@ -23,6 +23,10 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 (function() {
+    function isPhone() {
+        return /Mobi|Android/i.test(navigator.userAgent);
+    }
+
     var _onload = function() {
         var pretag = document.getElementById('d');
         var donutContainer = document.getElementById('donut-container');
@@ -102,7 +106,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             setTimeout(function() {
                 customTextContainer.style.opacity = 1;
-                if (window.innerWidth > 768) {
+                if (!isPhone()) {
                     customTextContainer.style.left = '200px';
                     customTextContainer.style.top = '200px';
                 } else {
@@ -151,4 +155,3 @@ document.addEventListener('DOMContentLoaded', function() {
 
     window.addEventListener("load", _onload, false);
 })();
-
