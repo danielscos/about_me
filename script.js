@@ -1,5 +1,5 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const asciiArt = `▐▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▌
+document.addEventListener('DOMContentLoaded', function() {
+    const asciiArt = `▐▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▌
 ▐ ▄▀▀█▄▄   ▄▀▀█▄   ▄▀▀▄ ▀▄  ▄▀▀█▀▄    ▄▀▀█▄▄▄▄  ▄▀▀▀▀▄      ▄▀▀▀▀▄  ▄▀▄▄▄▄   ▄▀▀▀▀▄   ▄▀▀▀▀▄▌
 ▐█ ▄▀   █ ▐ ▄▀ ▀▄ █  █ █ █ █   █  █  ▐  ▄▀   ▐ █    █      █ █   ▐ █ █    ▌ █      █ █ █   ▐▌
 ▐▐ █    █   █▄▄▄█ ▐  █  ▀█ ▐   █  ▐    █▄▄▄▄▄  ▐    █         ▀▄   ▐ █      █      █    ▀▄  ▌
@@ -17,13 +17,12 @@ document.addEventListener('DOMContentLoaded', () => {
         if (currentLine < asciiArtLines.length) {
             container.innerHTML += asciiArtLines[currentLine] + '\n';
             currentLine++;
-            setTimeout(printNextLine, 150); // Adjust the delay as needed
+            setTimeout(printNextLine, 150);
         }
     }
 
-    setTimeout(printNextLine, 3000); // Start printing after 2-3 seconds
+    setTimeout(printNextLine, 3000);
 });
-
 
 (function() {
     var _onload = function() {
@@ -105,8 +104,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
             setTimeout(function() {
                 customTextContainer.style.opacity = 1;
-                customTextContainer.style.left = '200px';
-                customTextContainer.style.top = '200px';
+                if (window.innerWidth > 768) {
+                    customTextContainer.style.left = '200px';
+                    customTextContainer.style.top = '200px';
+                } else {
+                    customTextContainer.style.left = '10px';
+                }
                 printTextEffect("Hi :3\n" +
                     "\n" +
                     "I'm Italian guy\n" +
@@ -137,8 +140,8 @@ document.addEventListener('DOMContentLoaded', () => {
             const rect = fadeOutButton.getBoundingClientRect();
             const x = event.clientX - rect.left - rect.width / 2;
             const y = event.clientY - rect.top - rect.height / 2;
-            const rotateX = -(y / rect.height) * 40; // Increase the 40 to make the tilt more intensive
-            const rotateY = (x / rect.width) * 40; // Increase the 40 to make the tilt more intensive
+            const rotateX = -(y / rect.height) * 40;
+            const rotateY = (x / rect.width) * 40;
 
             fadeOutButton.style.transform = `perspective(500px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
         });

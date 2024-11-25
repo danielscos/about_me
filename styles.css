@@ -4,10 +4,10 @@ body {
     margin: 0;
     overflow: hidden;
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    flex-direction: column;
+    align-items: center;
     height: 100vh;
-    padding-top: 10vh;
+    padding: 2vh 0;
 }
 
 #ascii-container {
@@ -15,18 +15,26 @@ body {
     font-family: monospace;
     text-align: center;
     font-size: 16px;
-    transition: opacity 2s; /* Add transition for opacity */
+    transition: opacity 2s;
+    width: 100%;
+    padding: 0 10px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 2vh;
 }
 
 #donut-container {
     display: flex;
     align-items: center;
     justify-content: center;
-    position: absolute;
-    bottom: 175px;
     width: 100%;
     opacity: 0;
     transition: opacity 2s;
+    flex: 1;
+    position: relative;
+    top: -15vh;
 }
 
 pre {
@@ -34,53 +42,59 @@ pre {
 }
 
 #fade-out-button {
-    position: absolute;
-    top: 500px;
-    left: 50px;
     padding: 10px 20px;
     font-family: 'Courier New', 'Lucida Console', monospace;
-    font-size: 26px;
+    font-size: 20px;
     cursor: pointer;
     background-color: #444;
     color: white;
     border: none;
     border-radius: 5px;
-    transition: background-color 0.3s, opacity 10s, transform 0.1s; /* Adjust transform transition */
+    transition: background-color 0.3s, opacity 2s, transform 0.1s;
     z-index: 1;
-    opacity: 0; /* Set initial opacity to 0 */
-    display: none; /* Initially hide the button */
+    opacity: 0;
+    display: none;
+    margin-top: 10px;
+    position: absolute;
+    left: 20px;
+    top: 50%;
 }
 
 #fade-out-button.fade-in {
-    display: block; /* Ensure the button is displayed */
-    opacity: 1; /* Set opacity to 1 for fade-in effect */
+    display: block;
+    opacity: 1;
 }
 
 #fade-out-button.fade-out {
-    transition: opacity 2s; /* Quick fade-out */
-    opacity: 0; /* Set opacity to 0 for fade-out effect */
+    transition: opacity 2s;
+    opacity: 0;
 }
 
 #fade-out-button:hover {
     background-color: #666;
-    transform: perspective(500px) rotateX(10deg) rotateY(10deg); /* Add 3D hover effect */
+    /* Remove the transform property to avoid position shift */
+    /* transform: perspective(500px) rotateX(10deg) rotateY(10deg); */
 }
 
 #custom-text {
-    position: absolute;
     font-family: 'Courier New', 'Lucida Console', monospace;
-    font-size: 20px;
+    font-size: 23px;
     color: white;
     white-space: pre-wrap;
     margin-top: 20px;
     opacity: 70%;
     transition: opacity 2s;
+    padding: 0 10px;
+    text-align: left;
+    position: absolute;
+    top: 50px;
+    left: 25px;
 }
 
 #custom-text .cursor {
     display: inline-block;
     width: 10px;
-    height: 20px; /* Ensure the cursor height matches the text */
+    height: 20px;
     background-color: white;
     animation: blink 1s step-end infinite;
 }
@@ -91,5 +105,58 @@ pre {
     }
     50% {
         background-color: white;
+    }
+}
+
+@media (orientation: portrait) {
+    #ascii-container {
+        font-size: 1.95vw;
+    }
+
+    pre {
+        font-size: 1.5vw;
+    }
+
+    #fade-out-button {
+        font-size: 4vw;
+        padding: 2vw 4vw;
+        top: 90%;
+        left: 36%;
+    }
+
+    #custom-text {
+        font-size: 3vw;
+        top: 10px;
+        left: 20px;
+        width: 80vw;
+    }
+
+    #donut-container {
+        position: static;
+        margin-bottom: 250px;
+    }
+
+    #d {
+        transform: scale(1.25);
+    }
+}
+
+@media (max-width: 768px) {
+    #custom-text {
+        font-size: 4vw;
+        top: 10px;
+        left: 20px;
+        width: 80vw;
+    }
+
+    #fade-out-button {
+        font-size: 4vw;
+        padding: 2vw 4vw;
+        top: 92%;
+        left: 36%;
+    }
+
+    #d {
+        transform: scale(1.5);
     }
 }
