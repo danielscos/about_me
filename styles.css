@@ -8,6 +8,7 @@ body {
     align-items: center;
     height: 100vh;
     padding: 2vh 0;
+    font-family: 'Courier New', 'Lucida Console', monospace; /* Ensure consistent font */
 }
 
 #ascii-container {
@@ -15,6 +16,7 @@ body {
     font-family: monospace;
     text-align: center;
     font-size: 16px;
+    line-height: 1.2; /* Ensure consistent line height */
     transition: opacity 2s;
     width: 100%;
     padding: 0 10px;
@@ -142,6 +144,10 @@ pre {
 }
 
 @media (max-width: 768px) {
+    #ascii-container {
+        font-size: 1vw; /* Adjust font size for smaller screens */
+    }
+
     #custom-text {
         font-size: 4vw;
         top: 10px;
