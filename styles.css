@@ -145,7 +145,7 @@ pre {
 
 @media (max-width: 768px) {
     #ascii-container {
-        font-size: 1vw; /* Adjust font size for smaller screens */
+        font-size: 1.85vw; /* Adjust font size for smaller screens */
     }
 
     #custom-text {
