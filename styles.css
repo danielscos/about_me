@@ -8,7 +8,7 @@ body {
     align-items: center;
     height: 100vh;
     padding: 2vh 0;
-    font-family: 'Courier New', 'Lucida Console', monospace; /* Ensure consistent font */
+    font-family: 'Courier New', 'Lucida Console', monospace;
 }
 
 #ascii-container {
@@ -16,7 +16,7 @@ body {
     font-family: monospace;
     text-align: center;
     font-size: 16px;
-    line-height: 1.2; /* Ensure consistent line height */
+    line-height: 1.2;
     transition: opacity 2s;
     width: 100%;
     padding: 0 10px;
@@ -24,7 +24,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    margin-top: 2vh;
+    margin-top: 1%;
 }
 
 #donut-container {
@@ -56,9 +56,9 @@ pre {
     z-index: 1;
     opacity: 0;
     display: none;
-    margin-top: 10px;
+    margin-top: 1%;
     position: absolute;
-    left: 20px;
+    left: 1%;
     top: 50%;
 }
 
@@ -74,23 +74,20 @@ pre {
 
 #fade-out-button:hover {
     background-color: #666;
-    /* Remove the transform property to avoid position shift */
-    /* transform: perspective(500px) rotateX(10deg) rotateY(10deg); */
 }
 
 #custom-text {
     font-family: 'Courier New', 'Lucida Console', monospace;
-    font-size: 23px;
+    font-size: 22px;
     color: white;
     white-space: pre-wrap;
-    margin-top: 20px;
+    margin-top: -120px;
+    margin-left: -20px;
     opacity: 70%;
     transition: opacity 2s;
     padding: 0 10px;
     text-align: left;
     position: absolute;
-    top: 50px;
-    left: 25px;
 }
 
 #custom-text .cursor {
@@ -107,5 +104,41 @@ pre {
     }
     50% {
         background-color: white;
+    }
+}
+
+@media (max-width: 600px) {
+    #custom-text {
+        font-family: 'Courier New', 'Lucida Console', monospace;
+        font-size: 20px;
+        color: white;
+        white-space: pre-wrap;
+        margin-top: -155px;
+        margin-left: -140px;
+        opacity: 70%;
+        transition: opacity 2s;
+        padding: 0 10px;
+        text-align: left;
+        position: absolute;
+    }
+
+    #fade-out-button {
+        padding: 10px 20px;
+        font-family: 'Courier New', 'Lucida Console', monospace;
+        font-size: 20px;
+        cursor: pointer;
+        background-color: #444;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        transition: background-color 0.3s, opacity 2s, transform 0.1s;
+        z-index: 1;
+        opacity: 0;
+        display: none;
+        margin-top: 10px;
+        position: absolute;
+        left: 35%;
+        top: 90%;
+
     }
 }
