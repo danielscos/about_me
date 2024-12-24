@@ -117,29 +117,64 @@ document.addEventListener('DOMContentLoaded', function() {
                 } else {
                     customTextContainer.style.left = '10px';
                 }
+
+
                 printTextEffect("Hi :3\n" +
                     "\n" +
                     "I'm Italian guy\n" +
                     "\n" +
-                    "I'm IT/BY\n" +
+                    "I'm Italian/Belarusian\n" +
                     "\n" +
                     "I'm a femboy, a furry, and I'm bi :3\n" +
                     "\n" +
-                    "I have ADHD, and tism.\n" +
+                    "I have ADHD, and tism. (undiagnosed)\n" +
                     "\n" +
-                    "I like coding, ethical hacking, hardware related stuff, and basically everything associated to tech.\n" +
+                    "interests: coding, hacking (ethical), drawing, photography\n" +
                     "\n" +
-                    "I am philosophical.\n" +
+                    "major trust issues hehe\n" +
                     "\n" +
-                    "I have major trust issues.\n" +
+                    "I let people take advantage of me for no reason :p\n" +
                     "\n" +
-                    "I get betrayed a lot.\n" +
+                    "and then they always hurt me\n" +
                     "\n" +
-                    "I hate being lonely\n" +
+                    "I hate feeling lonely\n" +
                     "\n" +
                     "that's all\n" +
                     "\n" +
-                    "goodbye..." , customTextContainer, 60);
+                    "goodbye ^^ " , customTextContainer, 60);
+
+                    const asciiArtContainer = document.createElement('div');
+                    asciiArtContainer.classList.add('ascii-art-container');
+                    asciiArtContainer.style.position = 'absolute';
+                    asciiArtContainer.style.top = '7%'; 
+                    asciiArtContainer.style.right = '30%'; 
+                    asciiArtContainer.style.opacity = '0'; 
+                    asciiArtContainer.style.transition = 'opacity 2s';
+                
+
+
+                const newTextElement = document.createElement('p');
+                newTextElement.textContent = "　　　　　 　 ____\n" +
+                "　 　　　　／＞　　フ\n" +
+                "　　　　　| 　_　 _ l\n" +
+                "　 　　　／` ミ＿xノ\n" +
+                "　　 　 /　　　 　 |\n" +
+                "　　　 /　  ヽ　　 ﾉ\n" +
+                "　 　 │　  　|　|　|\n" +
+                "　／￣|　　  |　|　|\n" +
+                "　| (￣ヽ＿ヽ)__) __)\n" +
+                "　＼二つ";
+                newTextElement.style.fontSize = '18px';
+                newTextElement.style.whiteSpace = 'pre';
+                newTextElement.style.fontFamily = 'monospace';
+                asciiArtContainer.appendChild(newTextElement);
+                document.body.appendChild(asciiArtContainer);
+
+                setTimeout(() => {
+                    asciiArtContainer.style.opacity = '1';
+                }, 100); 
+                
+                
             }, 4000);
         });
 
