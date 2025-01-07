@@ -123,31 +123,27 @@ document.addEventListener('DOMContentLoaded', function() {
                     "\n" +
                     "I'm Italian guy\n" +
                     "\n" +
-                    "I'm Italian/Belarusian\n" +
+                    "I'm Italian and Belarusian\n" +
                     "\n" +
                     "I'm a femboy, a furry, and I'm bi :3\n" +
                     "\n" +
-                    "I have ADHD, and tism. (undiagnosed)\n" +
+                    "political views: left-wing, pro-LGBTQIA+, pro-choice, pro-two state, liberal, and \nBRING THEM HOME\n" +
                     "\n" +
-                    "interests: coding, hacking (ethical), drawing, photography\n" +
+                    "some of my interests: coding, breaking code, photography, drawing, reading\n" +
                     "\n" +
-                    "major trust issues hehe\n" +
+                    "I let people take advantage of me too often\n" +
                     "\n" +
-                    "I let people take advantage of me for no reason :p\n" +
+                    "trust issues !!!\n" +
                     "\n" +
-                    "and then they always hurt me\n" +
+                    "that's all, thank you for reading :3\n" +
                     "\n" +
-                    "I hate feeling lonely\n" +
-                    "\n" +
-                    "that's all\n" +
-                    "\n" +
-                    "goodbye ^^ " , customTextContainer, 60);
+                    "goodbye ^^ " , customTextContainer, 45);
 
                     const asciiArtContainer = document.createElement('div');
                     asciiArtContainer.classList.add('ascii-art-container');
-                    asciiArtContainer.style.position = 'absolute';
                     asciiArtContainer.style.top = '7%'; 
-                    asciiArtContainer.style.right = '30%'; 
+                    asciiArtContainer.style.right = '10%'; 
+                    asciiArtContainer.style.position = 'absolute';
                     asciiArtContainer.style.opacity = '0'; 
                     asciiArtContainer.style.transition = 'opacity 2s';
                 
