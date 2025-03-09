@@ -125,13 +125,11 @@ document.addEventListener('DOMContentLoaded', function() {
                     "\n" +
                     "I'm Italian and Belarusian\n" +
                     "\n" +
-                    "I'm a femboy, a furry, and I'm bi :3\n" +
+                    "I'm a femboy, a furry, and I'm bi :3c\n" +
                     "\n" +
-                    "political views: left-wing, pro-LGBTQIA+, pro-choice, pro-two state, liberal, and \nBRING THEM HOME\n" +
+                    "political views: left-wing, pro-LGBTQIA+, pro-choice, liberal, and \nBRING THEM HOME\n" +
                     "\n" +
-                    "some of my interests: coding, breaking code, photography, drawing, reading\n" +
-                    "\n" +
-                    "I let people take advantage of me too often\n" +
+                    "some of my interests: coding, breaking code, photography,reading\n" +
                     "\n" +
                     "trust issues !!!\n" +
                     "\n" +
