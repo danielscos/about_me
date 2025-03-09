@@ -129,7 +129,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     "\n" +
                     "political views: left-wing, pro-LGBTQIA+, pro-choice, liberal, and \nBRING THEM HOME\n" +
                     "\n" +
-                    "some of my interests: coding, breaking code, photography,reading\n" +
+                    "some of my interests: coding, breaking code, photography, reading\n" +
                     "\n" +
                     "trust issues !!!\n" +
                     "\n" +
