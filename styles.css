@@ -167,7 +167,7 @@ pre {
         color: white;
         white-space: pre-wrap;
         margin-top: 10%;
-        margin-left: 2.5%;
+        margin-left: 0%;
         opacity: 70%;
         transition: opacity 2s;
         padding: 0 10px;
@@ -205,7 +205,7 @@ pre {
         transition: opacity 2s;
         flex: 1;
         position: relative;
-        top: -20%;
+        top: 15%;
         scale: 0.7;
     }
 
@@ -228,6 +228,45 @@ pre {
 
     .ascii-art-container {
         display: none;
+    }
+
+    #social-links {
+        position: relative; 
+    }
+
+    #social-links a:nth-child(1) .social-button {
+        position: relative;
+        font-size: 13px;
+        top: -1205%;
+        left: -60%;
+    }
+
+    #social-links a:nth-child(2) .social-button {
+        position: relative;
+        font-size: 13px;
+        top: -1200%;
+        left: -60%;
+    }
+
+    #social-links a:nth-child(3) .social-button {
+        position: relative;
+        font-size: 13px;
+        top: -1195%;
+        left: -60%;
+    }
+
+    #social-links a:nth-child(4) .social-button {
+        position: relative;
+        font-size: 13px;
+        top: -1506%;
+        left: 50%;
+    }
+
+    #social-links a:nth-child(5) .social-button {
+        position: relative;
+        font-size: 13px;
+        top: -1565%;
+        left: 67%;
     }
 }
 

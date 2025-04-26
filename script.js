@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const socialLinks = document.getElementById('social-links');
     setTimeout(() => {
         socialLinks.classList.add('fade-in');
-    }, 4000);
+    }, 5000);
 });
 
 (function() {
