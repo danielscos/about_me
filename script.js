@@ -25,6 +25,11 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     setTimeout(printNextLine, 3000);
+
+    const socialLinks = document.getElementById('social-links');
+    setTimeout(() => {
+        socialLinks.classList.add('fade-in');
+    }, 4000);
 });
 
 (function() {
@@ -33,6 +38,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     var _onload = function() {
+        var socialLinks = document.getElementById('social-links');
         var pretag = document.getElementById('d');
         var donutContainer = document.getElementById('donut-container');
         var fadeOutButton = document.getElementById('fade-out-button');
@@ -109,6 +115,9 @@ document.addEventListener('DOMContentLoaded', function() {
             donutContainer.style.opacity = 0;
             asciiContainer.style.opacity = 0;
 
+            socialLinks.classList.remove('fade-in');
+            socialLinks.classList.add('fade-out'); 
+
             setTimeout(function() {
                 customTextContainer.style.opacity = 1;
                 if (!isPhone()) {
@@ -129,7 +138,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     "\n" +
                     "political views: dm me to know :3\n" +
                     "\n" +
-                    "interests: coding/breaking code, photography, drawing, reading\n" +
+                    "interests: coding, cybersec, photography, drawing, reading\n" +
                     "\n" +
                     "that's all -w-" +
                     "\n" +
