@@ -123,24 +123,24 @@ document.addEventListener('DOMContentLoaded', function() {
                     "\n" +
                     "I'm Italian guy\n" +
                     "\n" +
-                    "I'm Italian and Belarusian\n" +
+                    "I'm Italian/Belarusian, residing in Israel\n" +
                     "\n" +
-                    "I'm a femboy, a furry, and I'm bi :3c\n" +
+                    "Femboy, furry, and itsy bitsy bi :3c\n" +
                     "\n" +
-                    "political views: left-wing, pro-LGBTQIA+, pro-choice, liberal, and \nBRING THEM HOME\n" +
+                    "political views: dm me to know :3\n" +
                     "\n" +
-                    "some of my interests: coding, breaking code, photography, reading\n" +
+                    "interests: coding/breaking code, photography, drawing, reading\n" +
                     "\n" +
-                    "trust issues !!!\n" +
+                    "that's all -w-" +
                     "\n" +
-                    "that's all, thank you for reading :3\n" +
+                    "" +
                     "\n" +
-                    "goodbye ^^ " , customTextContainer, 45);
+                    "cya ^^ " , customTextContainer, 45);
 
                     const asciiArtContainer = document.createElement('div');
                     asciiArtContainer.classList.add('ascii-art-container');
-                    asciiArtContainer.style.top = '7%'; 
-                    asciiArtContainer.style.right = '10%'; 
+                    asciiArtContainer.style.top = '10%'; 
+                    asciiArtContainer.style.right = '5%'; 
                     asciiArtContainer.style.position = 'absolute';
                     asciiArtContainer.style.opacity = '0'; 
                     asciiArtContainer.style.transition = 'opacity 2s';
@@ -148,16 +148,24 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
                 const newTextElement = document.createElement('p');
-                newTextElement.textContent = "　　　　　 　 ____\n" +
-                "　 　　　　／＞　　フ\n" +
-                "　　　　　| 　_　 _ l\n" +
-                "　 　　　／` ミ＿xノ\n" +
-                "　　 　 /　　　 　 |\n" +
-                "　　　 /　  ヽ　　 ﾉ\n" +
-                "　 　 │　  　|　|　|\n" +
-                "　／￣|　　  |　|　|\n" +
-                "　| (￣ヽ＿ヽ)__) __)\n" +
-                "　＼二つ";
+                newTextElement.textContent = 
+                " ⠀⢸⠀⠀⠀⠘⣧⠀⠀⣟⠛⠲⢤⡀⠀⠀⣰⠏⠀⠀⠀⠀⠀ ⢹\n" +
+                " ⠀⡿⠀⠀⠀⠀⠀⠈⢷⡀⢻⡀⠀⠀⠙⢦⣰⠏⠀⠀⠀⠀⠀⠀⢸⠀\n" +
+                " ⠀⡇⠀⠀⠀⠀⠀⠀⢀⣻⠞⠛⠀⠀⠀⠀⠻⠀⠀⠀⠀⠀⠀⠀⢸⠀\n" +
+                " ⠀⡇⠀⠀⠀⠀⠀⠀⠛⠓⠒⠓⠓⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠀\n" +
+                " ⠀⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣸⠀\n" +
+                " ⠀⢿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣀⣀⣀⠀⠀⢀⡟⠀⡇\n" +
+                " ⠀⠘⣇⠀⠘⣿⠋⢹⣿⣿⡇⠀⠀⠀⠀⣿⣿⡇⠀⢳⠉⠀⣠⡾⠁\n" +
+                " ⣦⣤⣽⣆⢀⡇⠀⢸⣿⣿⡇⠀⠀⠀⠀⣿⣿⡷⠀⢸⡇⠐⠛⠛⣿⠀\n" +
+                " ⠹⣦⠀⠀⠸⡇⠀⠸⣿⡿⠁⢀⡀⠀⠀⠿⠿⠃⠀⢸⠇⠀⢀⡾⠁⠀\n" +
+                " ⠀⠈⡿⢠⢶⣡⡄⠀⠀⠀⠀⠉⠁⠀⠀⠀⠀⠀⣴⣧⠆⠀⢻⡄⠀⠀\n" +
+                " ⠀⢸⠃⠀⠘⠉⠀⠀⠀⠠⣄⡴⠲⠶⠴⠃⠀⠀⠀⠉⡀⠀⠀⢻⡄⠀\n" +
+                " ⠀⠘⠒⠒⠻⢦⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣤⠞⠛⠒⠛⠋⠁⠀\n" +
+                " ⠀⠀⠀⠀⠀⠀⠸⣟⠓⠒⠂⠀⠀⠀⠀⠀⠈⢷⡀⠀⠀⠀⠀⠀⠀⠀\n" +
+                " ⠀⠀⠀⠀⠀⠀⠀⠙⣦⠀⠀⠀⠀⠀⠀⠀⠀⠈⢷⠀⠀⠀⠀⠀⠀⠀\n" +
+                " ⠀⠀⠀⠀⠀⠀⠀⣼⣃⡀⠀⠀⠀⠀⠀⠀⠀⠀⠘⣆⠀⠀⠀⠀⠀⠀\n" +
+                " ⠀⠀⠀⠀⠀⠀⠀⠉⣹⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⢻⠀⠀⠀⠀⠀⠀\n" +
+                " ⠀⠀⠀⠀⠀⠀⠀⠀⡿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡆⠀⠀⠀⠀⠀⠀\n"
                 newTextElement.style.fontSize = '18px';
                 newTextElement.style.whiteSpace = 'pre';
                 newTextElement.style.fontFamily = 'monospace';
@@ -166,7 +174,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                 setTimeout(() => {
                     asciiArtContainer.style.opacity = '1';
-                }, 100); 
+                }, 500); 
                 
                 
             }, 4000);
@@ -188,4 +196,4 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     window.addEventListener("load", _onload, false);
-})();
+})();   
